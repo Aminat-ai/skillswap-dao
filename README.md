@@ -1,36 +1,21 @@
-# Timelock Contract DAO for Cardano Blockchain
+# SkillSwap Contract
 
 ## Overview
 
-### This repository contains the Plutus script for a time-locked transaction contract, designed for use on the Cardano blockchain. The contract provides a mechanism for queuing and executing transactions after a specified delay, with built-in access control and error handling.
+The SkillSwap contract is a TypeScript-based implementation of a decentralized skill exchange platform. Users can register, post skill exchange requests, accept offers, complete exchanges, and rate participants. This implementation uses the plu-ts library for contract management in TypeScript.
 
-## Dependencies
-@harmoniclabs/plu-ts: A TypeScript library for writing Plutus smart contracts.
+## Features
+
+User Registration: Allows users to register with a username.
+Posting Skill Exchanges: Users can post skills they offer and request skills they need.
+Accepting Exchanges: Other users can accept posted skill exchanges.
+Completing Exchanges: Participants can mark an exchange as completed.
+Rating Users: Participants can rate each other after an exchange is completed.
 
 ## Installation
 
-### git clone https://github.com/AJTECH0001/TimeLock-DAO.git
+To use this code, you need to have a TypeScript environment set up with the plu-ts library. Follow these steps to set up your project:
 
-To install the required dependencies, run the following command in your project directory:
+### Install Dependencies
 
-### npm install @harmoniclabs/plu-ts
-
-## Contract Functionality
-
-Queueing Transactions: Allows authorized users to queue transactions with a specified delay.
-Executing Transactions: Enables the execution of queued transactions after the delay period has passed.
-Cancelling Transactions: Provides a mechanism for cancelling queued transactions.
-Access Control: Ensures only authorized users can queue, execute, or cancel transactions.
-Error Handling: Implements error handling for various scenarios like invalid timestamps, transaction not found, etc.
-
-## Potential Use Cases
-DAO governance: Time-locked proposals for DAO decisions.
-Escrow services: Holding funds until specific conditions are met.
-Automated tasks: Scheduling recurring tasks on the blockchain.
-
-## Future Improvements
-Security Audits: Conduct thorough security audits to identify and address potential vulnerabilities.
-Gas Optimization: Optimize the contract for gas efficiency.
-Additional Features: Explore adding features like multi-signature approvals or more complex transaction conditions.
-
-
+`npm install plu-ts @types/node`
