@@ -1,4 +1,4 @@
-# SkillSwap Contract
+# SkillSwap-DAO Contract
 
 ## Overview
 
@@ -19,3 +19,42 @@ To use this code, you need to have a TypeScript environment set up with the plu-
 ### Install Dependencies
 
 `npm install plu-ts @types/node`
+
+### Add the Code
+
+Create a file named SkillSwap.ts in your TypeScript project and copy the contract code into this file.
+
+### Compile TypeScript
+
+Make sure you have TypeScript installed and configured. Compile your TypeScript files using:
+
+`npx tsc`
+
+### Contract Usage
+
+### Register User
+
+`await skillSwap.registerUser(userName: string): Promise<void>`
+
+### Post Skill Exchange
+
+`await skillSwap.postSkillExchange(skillOffered: string, skillRequested: string): Promise<void>`
+
+### Accept Skill Exchange
+
+`await skillSwap.acceptSkillExchange(id: BigNumber): Promise<void>`
+
+### Complete Skill Exchange
+
+`await skillSwap.completeSkillExchange(id: BigNumber): Promise<void>`
+
+### Rate User
+
+`await skillSwap.rateUser(id: BigNumber, rating: BigNumber): Promise<void>`
+
+
+
+
+
+
+
